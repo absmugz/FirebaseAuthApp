@@ -1,0 +1,87 @@
+{
+  "name": "FirebaseAuthApp",
+  "displayName": "FirebaseAuthApp",
+  "expo": {
+    "name": "FirebaseAuthApp",
+    "slug": "FirebaseAuthApp",
+    "scheme": "firebaseauthapp",
+    "version": "1.0.0",
+    "extra": {
+      "API_KEY": "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "AUTH_DOMAIN": "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "PROJECT_ID": "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "STORAGE_BUCKET": "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "MESSAGING_SENDER_ID":"XXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "APP_ID":"XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/images/app-icon-all.png",
+    "splash": {
+      "image": "./assets/images/splash-logo-all.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#191015"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "icon": "./assets/images/app-icon-android-legacy.png",
+      "package": "com.firebaseauthapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
+        "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
+      },
+      "splash": {
+        "image": "./assets/images/splash-logo-android-universal.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#191015"
+      }
+    },
+    "ios": {
+      "icon": "./assets/images/app-icon-ios.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.firebaseauthapp",
+      "splash": {
+        "image": "./assets/images/splash-logo-ios-mobile.png",
+        "tabletImage": "./assets/images/splash-logo-ios-tablet.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#191015"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/app-icon-web-favicon.png",
+      "splash": {
+        "image": "./assets/images/splash-logo-web.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#191015"
+      },
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": false,
+            "flipper": false
+          },
+          "android": {
+            "newArchEnabled": false
+          }
+        }
+      ], 
+      "expo-font"
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  },
+  "ignite": {
+    "version": "UNKNOWN"
+  }
+}
